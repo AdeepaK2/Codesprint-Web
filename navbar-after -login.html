@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar1 {
+            display: flex;
+            flex-direction: column;
+            background-color: #6BA1FF;
+            margin-top: 0;
+            padding: 0;
+        }
+        .contactLine1, .logoLine1 {
+            display: flex;
+            margin: 0; /* Updated */
+        }
+        .contactLine1 h6 {
+            margin-right: 20px;
+            color: #191970;
+        }
+        .logoLine1 img {
+            margin: 0; /* Updated */
+            margin-bottom: 2px;
+        }
+        #logo{
+            width: 180px;
+            height: 50px;
+        }
+        #searchBar {
+            width: 350px;
+            height: 40px;
+            margin-left: 20px;
+            border-radius: 15px;
+            border: none;
+
+        }
+        #searchButton1{
+            width: 50px;
+            height: 42px;
+            border: none;
+            background-color: #274E91;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            position: relative;
+            top: 0;
+            right: 54px;
+            z-index: 999;
+        }
+        .search1{
+            position: relative;
+            left: 280px;
+        }
+        #loginRegBtn{
+            background-color: #6BA1FF;
+            border: none;
+            position: relative;
+            left: 350px;
+            font-size: x-large;
+        }
+        .nav-button1{
+            margin-right: 20px;
+        }
+        .nav-button1{
+            background: none;
+            border: none;
+            position: relative;
+            margin-right: 20px;
+            left: var(--button-left, 400px); /* Default position for buttons unless specified */
+        }
+        .icon1{
+            width: 40px;  /* Default width for icons */
+            height: 40px; /* Default height for icons */
+        }
+        .car-itemX{
+            display: flex;
+            flex-direction: column;
+            background-color: #9FFAE4;
+            width: 100px;
+            height: 200px;
+        }
+        .buttonInCar{
+            display: flex;
+            flex-direction: row;
+        }
+        .btninCar{
+            width:30px;height:30px;flex:1;background:none;margin-left:2px;border: none;padding-top:2px;
+        }
+        .btninCar:focus {
+            outline: none;
+        }
+
+
+
+
+
+
+
+        /* Style the user button */
+
+        .user {
+            position: relative;
+            display: inline-block;
+        }
+        .user-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .user-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .user:hover .user-content {
+            display: block;
+        }
+        .user-content a:hover {
+            background: #D6E5FF;
+            color: blue;
+            text-decoration: none;
+
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="navbar1">
+    <div class="contactLine1">
+        <h6>Call us: 076 4881254</h6>
+        <h6> Email: bt@bt.com</h6>
+    </div>
+    <div class="logoLine1">
+        <img src="public/logo.png" alt="logo" id="logo">
+        <div class="search1">
+            <input type="text" placeholder="Search...." id="searchBar">
+            <button id="searchButton1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50"
+                                           style="fill:#FFFFFF;">
+                <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+            </svg></button>
+        </div>
+        <button class="nav-button1" style="--button-left: 400px;">
+            <img src="public/heart-icon.svg" alt="Heart Icon" class="icon1">
+        </button>
+        <button class="nav-button1" style="--button-left: 400px;">
+            <img src="public/shoppinicon.png" alt="Shopping Icon" class="icon1">
+        </button>
+        <button class="nav-button1" style="--button-left: 400px;">
+            <div class="user">
+                <img src="public/user-icon.png" alt="User Icon" class="icon1">
+                <div class="user-content">
+                    <a href="#">My Profile</a>
+                    <a href="#">Shelf</a>
+                    <a href="#">Orders</a>
+                    <a href="#">+ Add Book</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </button>
+        <button class="nav-button1" style="--button-left: 380px;">
+            <h2>Adeepa</h2>
+        </button>
+    </div>
+</div>
+
+
+<br>
+<br>
+<div class="car-itemX">
+    <img src="public/hns.jpg" alt="" style="width:70px;height: 120px;align-self: center">
+    <div class="buttonsInCar">
+        <button class="btninCar">
+            <img src="public/heart-icon.svg" alt="Heart Icon" class="icon1" style="width:30px;height:30px">
+        </button>
+        <button  class="btninCar">
+            <img src="public/shoppinicon.png" alt="Shopping Icon" class="icon1" style="width:30px;height:30px">
+        </button>
+    </div>
+    <p style="align-self: center">Book Name</p>
+    <p style="align-self: center;position: relative;bottom: 5px;color:firebrick">Rs 12000</p>
+</div>
+
+
+</body>
+</html>
